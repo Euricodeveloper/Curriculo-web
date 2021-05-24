@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="author" content="Eurico Oliveira">
+		<meta name="keywords" content=" currículo, cv, Raiuga, WesRaiuga">
+		<meta name="description" content="Currículo de Eurico Oliveira - desenvolvedor de software">
+		<meta http-equiv="cache-control" content="no-cache" />
+		
+		<link rel="shortcut icon" href="assets/img/letrae.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="assets/css/animacoes.css">
+		<link rel="stylesheet" href="assets/css/banner.css">
+		<link rel="stylesheet" href="assets/css/menu-sticky.css">
+		<link rel="stylesheet" href="assets/css/accordion.css">
+		<!-- <link rel="stylesheet" href="assets/css/timeline.css"> -->
+		<link rel="stylesheet" href="assets/css/estilo-geral.css">
+
+		<script src="assets/js/i18n.js" defer></script>
+		<script src="assets/js/menu-sticky.js" defer></script>
+		<script src="assets/js/projetos.js" defer></script>
+		<script src="assets/js/accordion.js" defer></script>
+		
+		<title>Eurico Oliveira</title>
+	</head>
+
+	<body>
+		<!-- BANNER PRINCIPAL -->
+		<div id="banner">
+			<div id="banner-content">
+				<h3>Eurico Oliveira</h3>
+				<h1>
+					<span data-lang="PT">
+						Analista <span class="verde">Desenvolvedor</span>
+					</span>
+					<span class="hide" data-lang="EN">
+						Analyst <span class="verde">Developer</span>
+					</span>
+				</h1>
+				<p>
+					<span data-lang="PT">Full Stack Developer at <a id="Cubos" href="https://bityli.com/X1yJT">Cubos</a>.</span>
+					<span class="hide" data-lang="EN">Full Stacl Deveeloper at <a id="Cubos" href="https://bityli.com/X1yJT">Cubos</a>.</span>
+				</p>
+				 <!-- Redes Sociais -->
+				<nav id="redes-sociais">
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/eurico.oliveira.391082" class="social-icon">
+								<i class="fab fa-facebook-f fa-lg"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/eurico-oliveira-03575473/" class="social-icon">
+								<i class="fab fa-linkedin-in fa-lg"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/Euricodeveloper" class="social-icon">
+								<i class="fab fa-github fa-lg"></i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="scroll">
+					<i class="fas fa-angle-down"></i>
+				</div>
+			</div>
+		</div>
+		<!-- ./ BANNER PRINCIPAL -->
+		
+		<!-- MENU STICKY -->
+		<div id="menu">
+			<header>
+				<div class="titulo">
+					<h2>Eurico</h2>
+				</div>
+				
+				<div class="menu-hamburguer">
+					<span class="traco traco-1"></span>
+					<span class="traco traco-2"></span>
+					<span class="traco traco-3"></span>
+				</div>
+				
+				<nav class="filtros">
+					<a href="#sobre-mim">
+						<span data-lang="PT">Sobre Mim</span>
+						<span class="hide" data-lang="EN">About Me</span>
+					</a>
+					<a href="#escolaridade">
+						<span data-lang="PT">Escolaridade</span>
+						<span class="hide" data-lang="EN">Education</span>
+					</a>
+					<a href="#experiencia-profissional">
+						<span data-lang="PT">Experiência Profissional</span>
+						<span class="hide" data-lang="EN">Professional Experience</span>
+					</a>
+					<a href="#projetos">
+						<span data-lang="PT">Projetos</span>
+						<span class="hide" data-lang="EN">Projects</span>
+					</a>
+					<a href="#contato">
+						<span data-lang="PT">Contato</span>
+						<span class="hide" data-lang="EN">Contact</span>
+					</a>
+					<div class="idiomas-btn">
+						<ul>
+							<li onclick="atualizaIdioma('PT')">
+								<img src="assets/img/icones/brazil.png" alt="Bandeira do Brasil">
+							</li>
+							<li onclick="atualizaIdioma('EN')">
+								<img src="assets/img/icones/usa.png" alt="Bandeira dos Estados Unidos da América">
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			
+			<nav class="filtros mobile">
+				<a href="#sobre-mim">
+					<span data-lang="PT">Sobre Mim</span>
+					<span class="hide" data-lang="EN">About Me</span>
+				</a>
+				<a href="#escolaridade">
+					<span data-lang="PT">Escolaridade</span>
+					<span class="hide" data-lang="EN">Education</span>
+				</a>
+				<a href="#experiencia-profissional">
+					<span data-lang="PT">Experiência Profissional</span>
+					<span class="hide" data-lang="EN">Professional Experience</span>
+				</a>
+				<a href="#projetos">
+					<span data-lang="PT">Projetos</span>
+					<span class="hide" data-lang="EN">Projects</span>
+				</a>
+				<a href="#contato">
+					<span data-lang="PT">Contato</span>
+					<span class="hide" data-lang="EN">Contact</span>
+				</a>
+				<!-- Botões de Idioma -->
+				<div class="idiomas-btn">
+					<ul>
+						<li onclick="atualizaIdioma('PT')">
+							<img src="assets/img/icones/brazil.png" alt="Bandeira do Brasil">
+						</li>
+						<li onclick="atualizaIdioma('EN')">
+							<img src="assets/img/icones/usa.png" alt="Bandeira dos Estados Unidos da América">
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- ./ MENU STICKY -->
+		
+		<!-- SOBRE MIM -->
+		<section id="sobre-mim" class="secao">
+			<div class="secao-content">
+				<h1>
+					<span data-lang="PT">Em construção</span>
+					<span class="hide" data-lang="EN">Under construction</span>
+				</h1>
+			</div>
+		</section>
+		<!-- ./ SOBRE MIM -->
+		
+		<!-- ESCOLARIDADE -->
+		<section id="escolaridade" class="secao">
+			<div class="secao-title">
+				<div class="secao-title-content">
+					<h2>
+						<span data-lang="PT">Escolaridade</span>
+						<span class="hide" data-lang="EN">Education</span>
+					</h2>
+				</div>
+			</div>
+			
+			<div class="secao-content">
+
+				<!-- FORMAÇÃO ACADÊMICA -->
+				<button class="accordion">
+					<span data-lang="PT">Formação Acadêmica</span>
+					<span class="hide" data-lang="EN">Academic Education</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/escolaridade/logo-estacio.png" alt="Estacio escrito em cor magenta">
+							</div>
+							<p>Universidade Estacio de Sá</p>
+						</div>
+						<div class="info">
+							<p class="subtitle">
+								<span data-lang="PT">Análise e Desenvolvimento de Sistemas</span>
+								<span class="hide" data-lang="EN">Analysis and Systems Development</span>
+							</p>
+							<p>
+								<span data-lang="PT">2020 - 2023 (concluído)</span>
+								<span class="hide" data-lang="EN">2020 - 2023 (studying)</span>
+							</p>
+						</div>
+					</div>
+
+					</div>
+				</div>
+				<!-- ./ FORMAÇÃO ACADÊMICA -->
+
+				<!-- CURSOS -->
+				<button class="accordion">
+					<span data-lang="PT">Cursos</span>
+					<span class="hide" data-lang="EN">Courses</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<!-- MASTERTECH -->
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/escolaridade/cubos academy.png" alt="Logo da Cubos.">
+							</div>
+							<p>Desenvolvedor Full stack</p>
+						</div>
+						<div class="info horizontal">
+							<div>
+								<p class="subtitle">
+									<span data-lang="PT">Cubos Academy</span>
+									<span class="hide" data-lang="EN">Cubos Academy</span>
+								</p>
+								<p>
+									<span data-lang="PT">On-line (750 horas)</span>
+									<span class="hide" data-lang="EN">On-line (750 hours)</span>
+								</p>
+								<a href="">
+									<span data-lang="PT">Ver certificado</span>
+									<span class="hide" data-lang="EN">View certificate</span>
+								</a>
+							</div>
+							<div>
+								<p class="subtitle">
+									<span data-lang="PT">Logica de Programação</span>
+									<span class="hide" data-lang="EN">programming logic</span>
+								</p>
+								<p>
+									<span data-lang="PT">On-line (24 horas)</span>
+									<span class="hide" data-lang="EN">On-Line (24 hours)</span>
+								</p>
+								<a href="hhttps://drive.google.com/drive/folders/1XnZ7Rd-sd-UDj3GYICRT7l1F1HkuhvmP">
+									<span data-lang="PT">Ver certificado</span>
+									<span class="hide" data-lang="EN">View certificate</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- ./ MASTERTECH -->
+
+					<!-- B7Web -->
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/escolaridade/B7web.png" alt="Logo da B7Web.">
+							</div>
+							<p>B7Web</p>
+						</div>
+						<div class="info horizontal">
+							<div>
+								<p class="subtitle">
+									<span data-lang="PT">Programação Full stack</span>
+									<span class="hide" data-lang="EN">Full Stack Developer</span>
+								</p>
+								<p>
+									<span data-lang="PT">Online (700 horas)</span>
+									<span class="hide" data-lang="EN">Online (700 hours)</span>
+								</p>
+								<a href="">
+									<span data-lang="PT">Ver certificado</span>
+									<span class="hide" data-lang="EN">View certificate</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- ./ B7Web -->
+
+				</div>
+				<!-- ./ CURSOS -->
+
+				<!-- CERTIFICADOS -->
+				<button class="accordion">
+					<span data-lang="PT">Certificados</span>
+					<span class="hide" data-lang="EN">Certificates</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<p>
+						<span data-lang="PT">Em construção</span>
+						<span class="hide" data-lang="EN">Under construction</span>
+					</p>
+				</div>
+				<!-- ./ CERTIFICADOS -->
+
+			</div>
+		</section>
+		<!-- ./ ESCOLARIDADE -->
+		
+		<!-- EXPERIÊNCIA PROFISSIONAL -->
+		<section id="experiencia-profissional" class="secao">
+			<div class="secao-title">
+				<div class="secao-title-content">
+					<h2>
+						<span data-lang="PT">Experiência Profissional</span>
+						<span class="hide" data-lang="EN">Professional Experience</span>
+					</h2>
+				</div>
+			</div>
+			
+			<div class="secao-content">
+
+				<button class="accordion">
+					<span data-lang="PT">Gerente de contas</span>
+					<span class="hide" data-lang="EN">Account manager</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/exp-profissional/olx.jpg" alt="Logotipo da OLX">
+							</div>
+							<p>
+								<span data-lang="PT">OLX Brasil</span>
+								<span class="hide" data-lang="EN">OLX Brasil</span>
+							</p>
+						</div>
+						<div class="info">
+							<p class="subtitle">2019 a 2021</p>
+							<p>
+								<span data-lang="PT">Responsável pela gestão de 20 contas estratégicas da companhia; Atendimento consultivo às Incorporadoras, abordando todo portfólio de produtos do Grupo OLX Brasil: CRMs, ZAP, Viva Real, OLX, Datazap e Geoimovel; Atuação global no cliente, desde área de novos negócios à marketing, comercial e diretoria; Trabalho focado em agregar valor ao negócio do cliente, trazendo liquidez com informações estratégicas; Atendimento personalizado para cada cliente; Foco em excelência no atendimento; Visão analítica com objetivo de criar novas oportunidades que beneficiem tanto cliente quanto a companhia; Atuação no Sales Force; Rotina de reuniões; Gestão de crises, intermediando todas as áreas da empresa a fim de ser a ponte entre cliente e companhia; Prospecção de grande contas.</span>
+								<span class="hide" data-lang="EN">Responsible for the management of 20 strategic accounts of the company; Advisory service to Real Estate Developers, covering the entire product portfolio of the OLX Brasil Group: CRMs, ZAP, Viva Real, OLX, Datazap and Geoimovel; Global performance in the client, from new business area to marketing, sales and management; Work focused on adding value to the client's business, bringing liquidity with strategic information; Personalized service for each client; Focus on service excellence; Analytical vision in order to create new opportunities that benefit both the customer and the company; Performance in Sales Force; Meeting routine; Crisis management, intermediating all areas of the company in order to be the bridge between customer and company; Prospecting for large accounts.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<button class="accordion">
+					<span data-lang="PT">Gerente Comercial</span>
+					<span class="hide" data-lang="EN">Comercial Manager</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/exp-profissional/RDO.png" alt="Logotipo da RDO Empreendimentos">
+							</div>
+							<p>
+								<span data-lang="PT">RDO Empreendimentos imobiliarios LTDA.</span>
+								<span class="hide" data-lang="EN">RDO Empreendimentos imobiliarios LTDA.</span>
+							</p>
+						</div>
+						<div class="info">
+							<p class="subtitle">2018 a 2019</p>
+							<p>
+								<span data-lang="PT">Gerenciei duas grandes incorporadoras de São José, RDO e Rodes, com o desafio de estruturar duas praças que estavam com dificuldade de performance, dada a peculiaridade dos empreendimentos.
+
+									Entrei na conta com o desafio de gerenciar 4 produtos que precisavam de uma atenção especial, sendo eles um alto padrão na cidade de Itapema, e três produtos de ticket médio na cidade de Palhoça.
+									O trabalho consistia em uma analise profunda de dados, concorrência e campanhas de marketing, para assim oferecer soluções condizentes com as necessidades de cada produto. Criei estratégias com base em analise swot, plano de ação 5W2H, analises de ciclo PDCA e MASP dentre outras formatações de negocio que conversavam com o momento e a necessidade de cada produto. construímos o resultado embasado e dentro das principais diretrizes da empresa, que tem por característica decisões mais conservadoras.
+									Um dos maiores feitos foi o aumento da visibilidade dos produtos junto ao mercado consumidor e ao mercado de parceiras, aumentando de forma expressiva propostas de compra e visita nas unidades imobiliárias.
+									O estreitamento de relacionamento e aquisição de novas parcerias foi fundamental para a consolidação deste processo, muitas empresas em busca de solidificar o relacionamento com a incorporadora tornado a RDO primeira opção de negócios.</span>
+								<span class="hide" data-lang="EN">I managed two large developers in São José, RDO and Rhodes, with the challenge of structuring two squares that were experiencing performance difficulties, given the peculiarities of the projects.
+
+									I entered the account with the challenge of managing 4 products that needed special attention, being a high standard in the city of Itapema, and three medium ticket products in the city of Palhoça.
+									The work consisted of an in-depth analysis of data, competition and marketing campaigns, in order to offer solutions consistent with the needs of each product. I created strategies based on swot analysis, 5W2H action plan, PDCA and MASP cycle analysis, among other business formats that talked with the moment and the need for each product. we built the result based on and within the main guidelines of the company, which is characterized by more conservative decisions.
+									One of the greatest achievements was the increase in the visibility of products with the consumer market and the partner market, significantly increasing purchase and visit proposals in real estate units.
+									The closer relationship and the acquisition of new partnerships was fundamental for the consolidation of this process, many companies looking to solidify the relationship with the developer making RDO the first business option.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<button class="accordion">
+					<span data-lang="PT">Gerente Comercial</span>
+					<span class="hide" data-lang="EN">comercial Manager</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/exp-profissional/Scire.jpg" alt="Logotipo da Scire">
+							</div>
+							<p>
+								<span data-lang="PT">Scire Incorporações.</span>
+								<span class="hide" data-lang="EN">Scire Incorporações</span>
+							</p>
+						</div>
+						<div class="info">
+							<p class="subtitle">2017 - 2018</p>
+							<p>
+								<span data-lang="PT">Gerente comercial na SCIRE, uma das incorporadoras que mais cresce no mercado Catarinense. Gerencia da área comercial (imobiliárias) da SCIRE em SC. Controle, acompanhamento e busca de metas de vendas da companhia. Participação na formatação de produtos e em desenvolvimento de campanhas junto à área de marketing. Monitoramento constante de preços, estoques SCIRE e concorrência. Orientação de ajustes de tabelas, criação de premiações e ações motivacionais. Análise e aprovação de vendas. Suporte total às imobiliárias, prezando resultado, qualidade das vendas e satisfação do cliente. Treinamento e desenvolvimento de imobiliárias parceiras e direcionamento a comercialização de nossos produtos.
+									Em minha gestão um dos maiores feitos foi a consagração do canal imobiliário como campeão de vendas da empresa pela primeira vez em sua historia. O canal fez um resultado extremamente expressivo, comercializando mais de R$ 4.500.000,00 em um único mês, resultado histórico para empresa.</span>
+								<span class="hide" data-lang="EN">Commercial manager at SCIRE, one of the fastest growing developers in the Santa Catarina market. Manages the commercial area (real estate) of SCIRE in SC. Control, monitoring and search of the company's sales goals. Participation in the formatting of products and in the development of campaigns with the marketing area. Constant monitoring of prices, SCIRE stocks and competition. Guidance on table adjustments, creation of awards and motivational actions. Sales analysis and approval. Full support to real estate agents, valuing results, sales quality and customer satisfaction. Training and development of real estate partners and targeting the commercialization of our products.
+									In my management one of the greatest achievements was the acclaim of the real estate channel as the company's best seller for the first time in its history. The channel made an extremely expressive result, selling more than R $ 4,500,000.00 in a single month, a historic result for the company.
+									</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<button class="accordion">
+					<span data-lang="PT">Consultor de negocios</span>
+					<span class="hide" data-lang="EN">Consulting Business</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/exp-profissional/Brog.jpg" alt="Logotipo da Brognoli">
+							</div>
+							<p>
+								<span data-lang="PT">Brognoli Imóveis.</span>
+								<span class="hide" data-lang="EN">Brognoli Real Estate</span>
+							</p>
+						</div>
+						<div class="info">
+							<p class="subtitle">2017</p>
+							<p>
+								<span data-lang="PT">Prospecção de imoveis e clientes para pauta da empresa, bem como
+									atendimento consultivo para os clientes da base. Responsável pela gestão estratégica de novos
+									negócios, manutenção dos antigos e retenção dos atuais, sempre visando a fidelização e o
+									relacionamento dos clientes atendidos, mantendo laços de confiança e estabilidade comercial.</span>
+								<span class="hide" data-lang="EN">Prospecting real estate and clients for the company's agenda, as well as
+									consultative service for base customers. Responsible for the strategic management of new
+									business, maintenance of the old and retention of the current, always aiming at the loyalty and the
+									relationship of the clients served, maintaining bonds of trust and commercial stability..</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- ./ EXPERIÊNCIA PROFISSIONAL -->
+		
+		<!-- PROJETOS -->
+		<section id="projetos" class="secao">
+			<div class="secao-title">
+				<div class="secao-title-content">
+					<h2>
+						<span data-lang="PT">Projetos</span>
+						<span class="hide" data-lang="EN">Projects</span>
+					</h2>
+				</div>
+			</div>
+			<div class="secao-content">
+				<!-- Abas -->
+				<div class="tabs">
+					<button id="front" class="tab active">Front-End</button>
+					<button id="back" class="tab">Back-End</button>
+					<button id="outros" class="tab">
+						<span data-lang="PT">Outros</span>
+						<span class="hide" data-lang="EN">Others</span>
+					</button>
+				</div>
+				
+				<!-- Conteúdo das Abas -->
+				<!-- Front End -->
+				<div class="tab-content active">
+					
+					<div class="projeto" id="proj-cubos1">
+						<div class="projeto-content">
+							<a href="link projeto">
+								<i class="fas fa-link"></i>
+								<span data-lang="PT">Visitar</span>
+								<span class="hide" data-lang="EN">Visit</span>
+							</a>
+							<a href="link codigo">
+								<i class="fas fa-code"></i>
+								<span data-lang="PT">Ver Código</span>
+								<span class="hide" data-lang="EN">See Code</span>
+							</a>
+						</div>
+						<a href="link pagina" class="projeto-titulo">
+							<span data-lang="PT">Landing page</span>
+							<span class="hide" data-lang="EN">Landing page</span>
+						</a>
+					</div>
+					
+					<div class="projeto" id="proj-cubos2">
+						<div class="projeto-content">
+							<a href="link projeto">
+								<i class="fas fa-link"></i>
+								<span data-lang="PT">Visitar</span>
+								<span class="hide" data-lang="EN">Visit</span>
+							</a>
+							<a href="link codigo">
+								<i class="fas fa-code"></i>
+								<span data-lang="PT">Ver Código</span>
+								<span class="hide" data-lang="EN">See Code</span>
+							</a>
+						</div>
+						<a href="Link pagina" class="projeto-titulo">Em construção</a>
+					</div>
+					
+				</div>
+				
+				<!-- Back End -->
+				<div class="tab-content">
+					
+					<div class="projeto">
+						<div class="projeto-content">
+							<a href="#">
+								<i class="fas fa-link"></i>
+								<span data-lang="PT">Visitar</span>
+								<span class="hide" data-lang="EN">Visit</span>
+							</a>
+							<a href="#">
+								<i class="fas fa-code"></i>
+								<span data-lang="PT">Ver Código</span>
+								<span class="hide" data-lang="EN">See Code</span>
+							</a>
+						</div>
+						<a href="#" class="projeto-titulo">
+							<span data-lang="PT">Nome do Projeto</span>
+							<span class="hide" data-lang="EN">Project's Name</span>
+						</a>
+					</div>
+					
+					<div class="projeto">
+						<div class="projeto-content">
+							<a href="#">
+								<i class="fas fa-link"></i>
+								<span data-lang="PT">Visitar</span>
+								<span class="hide" data-lang="EN">Visit</span>
+							</a>
+							<a href="#">
+								<i class="fas fa-code"></i>
+								<span data-lang="PT">Ver Código</span>
+								<span class="hide" data-lang="EN">See Code</span>
+							</a>
+						</div>
+						<a href="#" class="projeto-titulo">
+							<span data-lang="PT">Nome do Projeto</span>
+							<span class="hide" data-lang="EN">Project's Name</span>
+						</a>
+					</div>
+					
+				</div>
+				
+				<!-- Outros -->
+				<div class="tab-content">
+					
+					<div class="projeto" id="proj-stream">
+						<div class="projeto-content">
+							<a href="#">
+								<i class="fas fa-images"></i>
+								<span data-lang="PT">Ver videos</span>
+								<span class="hide" data-lang="EN">View movies</span>
+							</a>
+						</div>
+						<a href="#" class="projeto-titulo">
+							<span data-lang="PT">Streams</span>
+							<span class="hide" data-lang="EN">Streams</span>
+						</a>
+					</div>
+					
+
+					
+				</div>
+			</div>
+		</section>
+		<!-- ./ PROJETOS -->
+		
+		<!-- CONTATO -->
+		<section id="contato" class="secao">
+			<div class="secao-title">
+				<div class="secao-title-content">
+					<h2>
+						<span data-lang="PT">Contato</span>
+						<span class="hide" data-lang="EN">Contact</span>
+					</h2>
+				</div>
+			</div>
+			<div class="secao-content">
+				<h1>
+					<span data-lang="PT">Em construção</span>
+					<span class="hide" data-lang="EN">Under construction</span>
+				</h1>
+			</div>
+		</section>
+		<!-- ./ CONTATO -->
+		
+		<footer>
+			<div>
+				<!-- Redes Sociais -->
+				<ul id="footer-redes-sociais">
+					<li>
+						<a href="https://www.facebook.com/eurico.oliveira.391082" class="footer-social-icon">
+							<i class="fab fa-facebook-f fa-lg"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/eurico-oliveira-03575473/" class="footer-social-icon">
+							<i class="fab fa-linkedin-in fa-lg"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/Euricodeveloper" class="footer-social-icon">
+							<i class="fab fa-github fa-lg"></i>
+						</a>
+					</li>
+				</ul>
+				
+			</div>
+			<div>
+				<span>2021 - Eurico Oliveira</span>
+			</div>
+		</footer>
+		
+	</body>
+</html>
