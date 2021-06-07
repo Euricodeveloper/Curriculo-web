@@ -19,10 +19,21 @@ p {
 	margin: 5px 0;
 	font-size: 12pt;
 }
-a {
+.taga:hover {
+	text-decoration: none;
+	color: #ed145b;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: underline;
+	
+	
+}
+
+a{
 	text-decoration: none;
 	color: #009966;
 }
+
 ul {
 	list-style: none;
 	margin: 0;
